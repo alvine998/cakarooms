@@ -24,7 +24,7 @@ export default function index() {
             alt="bg"
           />
           <div className="px-40">
-            <div className="bg-white shadow-xl rounded-xl w-full h-[15vh] -mt-14 relative z-10 flex gap-2 items-center justify-between py-2 px-5">
+            <div className="bg-white shadow-xl rounded-xl w-full h-[15vh] -mt-14 relative z-10 flex gap-2 items-center justify-between py-2 px-10">
               <div className="flex flex-col gap-2 w-full">
                 <label htmlFor="room" className="text-sm text-gray-500">
                   Tipe Ruangan
@@ -62,6 +62,7 @@ export default function index() {
                     type="date"
                     className="border-2 p-1 rounded w-full focus:outline-none focus:ring-2 focus:ring-orange-700 duration-200"
                     name="checkin"
+                    defaultValue={new Date().toISOString().substring(0, 10)}
                   />
                 </div>
               </div>
@@ -78,11 +79,15 @@ export default function index() {
                     type="date"
                     className="border-2 p-1 rounded w-full focus:outline-none focus:ring-2 focus:ring-orange-700 duration-200"
                     name="checkout"
+                    defaultValue={new Date().toISOString().substring(0, 10)}
                   />
                 </div>
               </div>
 
-              <button type="button" className="text-white py-1 px-2 rounded bg-orange-700 w-full mt-8">
+              <button
+                type="button"
+                className="text-white py-1 px-2 rounded bg-orange-700 w-full mt-8 hover:bg-orange-600 duration-200"
+              >
                 Cari Sekarang
               </button>
             </div>
