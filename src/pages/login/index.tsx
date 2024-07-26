@@ -13,13 +13,13 @@ export default function Login() {
     e?.preventDefault();
     const formData: any = Object.fromEntries(new FormData(e.target));
     try {
-      if (formData?.email !== "085703049632") {
+      if (formData?.email !== "admin@homste.id") {
         return Swal.fire({
           icon: "error",
           text: "Email / No Telepon tidak terdaftar!",
         });
       }
-      if (formData?.password !== "admincaka123") {
+      if (formData?.password !== "admin1234") {
         return Swal.fire({
           icon: "error",
           text: "Password Salah!",

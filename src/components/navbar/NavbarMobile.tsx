@@ -59,7 +59,7 @@ export default function NavbarMobile({ children, session }: { children: ReactNod
             <div className='bg-blue-500 w-full h-14 flex items-center px-2'>
                 <Menu>
                     <MenuButton className={'flex gap-2 items-center justify-end w-full'}>
-                        <p className='text-white text-xl absolute top-3 left-0 right-0'>CAKAROOMS</p>
+                        <p className='text-white text-xl absolute top-3 left-0 right-0'>HOMSTE</p>
                         <MenuIcon color='white' className='w-7' />
                     </MenuButton>
                     <Transition
