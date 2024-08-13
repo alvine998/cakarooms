@@ -8,23 +8,18 @@ import React from "react";
 export default function index() {
   return (
     <div>
-      <Head>
-        <title>Homste</title>
-      </Head>
-
-      <div>
-        <NavbarHome />
-        <div className="relative mt-[10vh]">
+      <div className="w-full">
+        <div className="relative lg:mt-[10vh] mt-0">
           <Image
             src={"/images/homebanner.jpg"}
             layout="relative"
             width={1080}
             height={720}
-            className="w-full h-[70vh] relative z-0"
+            className="w-full lg:h-[70vh] relative z-0"
             alt="bg"
           />
-          <div className="px-40">
-            <div className="bg-white shadow-xl rounded-xl w-full h-[15vh] -mt-14 relative z-10 flex gap-2 items-center justify-between py-2 px-10">
+          <div className="lg:px-40 px-2">
+            <div className="bg-white shadow-xl rounded-xl w-full lg:h-[15vh] h-auto -mt-14 relative z-10 flex lg:flex-row flex-col gap-2 items-center justify-between lg:py-2 py-5 px-10">
               <div className="flex flex-col gap-2 w-full">
                 <label htmlFor="room" className="text-sm text-gray-500">
                   Tipe Ruangan
